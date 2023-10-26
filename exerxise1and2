@@ -1,1 +1,108 @@
-#
+#exercise 1 (PERSON)
+class Person:
+    def __init__(self, name="", surname="", age=0, address="", phone_number=""):
+        self.name = name
+        self.surname = surname
+        self.age = age
+        self.address = address
+        self.phone_number = phone_number
+
+    # Getters
+    def get_name(self):
+        return self.name
+
+    def get_surname(self):
+        return self.surname
+
+    def get_age(self):
+        return self.age
+
+    def get_address(self):
+        return self.address
+
+    def get_phone_number(self):
+        return self.phone_number
+
+    # Setters
+    def set_name(self, name):
+        self.name = name
+
+    def set_surname(self, surname):
+        self.surname = surname
+
+    def set_age(self, age):
+        self.age = age
+
+    def set_address(self, address):
+        self.address = address
+
+    def set_phone_number(self, phone_number):
+        self.phone_number = phone_number
+
+    # Method to print the person's information
+    def print_info(self):
+        print(f"Name: {self.name}")
+        print(f"Surname: {self.surname}")
+        print(f"Age: {self.age}")
+        print(f"Address: {self.address}")
+        print(f"Phone Number: {self.phone_number}")
+
+# Usage
+if __name__ == "__main__":
+    person = Person("John", "Doe", 30, "123 Main St", "555-123-4567")
+    person.print_info()
+
+#Exercise 2 (CAR)
+class Car:
+    def __init__(self, make="", model="", color="", num_doors=4, engine_power=""):
+        self.make = make
+        self.model = model
+        self.color = color
+        self.num_doors = num_doors
+        self.engine_power = engine_power
+
+    # Getters
+    def get_make(self):
+        return self.make
+
+    def get_model(self):
+        return self.model
+
+    def get_color(self):
+        return self.color
+
+    def get_num_doors(self):
+        return self.num_doors
+
+    def get_engine_power(self):
+        return self.engine_power
+
+    # Setters
+    def set_make(self, make):
+        self.make = make
+
+    def set_model(self, model):
+        self.model = model
+
+    def set_color(self, color):
+        self.color = color
+
+    def set_num_doors(self, num_doors):
+        self.num_doors = num_doors
+
+    def set_engine_power(self, engine_power):
+        self.engine_power = engine_power
+
+    # Method to print the car's information
+    def print_info(self):
+        print(f"Make: {self.make}")
+        print(f"Model: {self.model}")
+        print(f"Color: {self.color}")
+        print(f"Number of Doors: {self.num_doors}")
+        print(f"Engine Power: {self.engine_power}")
+
+# Usage
+if __name__ == "__main__":
+    car = Car("Toyota", "Camry", "Blue", 4, "200 hp")
+    car.print_info()
+
