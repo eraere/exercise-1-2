@@ -1,4 +1,6 @@
 #exercise 1 (PERSON)
+
+
 class Person:
     def __init__(self, name="", surname="", age=0, address="", phone_number=""):
         self.name = name
@@ -52,7 +54,13 @@ if __name__ == "__main__":
     person = Person("John", "Doe", 30, "123 Main St", "555-123-4567")
     person.print_info()
 
+
+
+
+
 #Exercise 2 (CAR)
+
+
 class Car:
     def __init__(self, make="", model="", color="", num_doors=4, engine_power=""):
         self.make = make
